@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Onboarding1Controller" customModule="baseapp" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="r5X-BI-vk2" id="GUB-vc-spd"/>
+                <outlet property="label" destination="iGb-tz-aHQ" id="CPh-YZ-TMF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ip X Copy 13" translatesAutoresizingMaskIntoConstraints="NO" id="2IY-Kw-ghQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-11-36f">
+                    <rect key="frame" x="0.0" y="708" width="375" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5X-BI-vk2">
+                            <rect key="frame" x="56.333333333333343" y="5" width="262.33333333333326" height="60"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ifO-B0-sFa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Continue">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="r5X-BI-vk2" firstAttribute="width" secondItem="fCY-11-36f" secondAttribute="width" multiplier="0.7" id="MME-18-llI"/>
+                        <constraint firstAttribute="height" constant="70" id="gAe-sH-QFN"/>
+                        <constraint firstItem="r5X-BI-vk2" firstAttribute="centerY" secondItem="fCY-11-36f" secondAttribute="centerY" id="vHN-Q2-W4p"/>
+                        <constraint firstItem="r5X-BI-vk2" firstAttribute="centerX" secondItem="fCY-11-36f" secondAttribute="centerX" id="zfS-fe-jl1"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identify plants, insects with a tap of your finger!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGb-tz-aHQ">
+                    <rect key="frame" x="20" y="650" width="335" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="iGb-tz-aHQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3hJ-mP-Jaa"/>
+                <constraint firstItem="2IY-Kw-ghQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4eV-Dx-zCM"/>
+                <constraint firstItem="2IY-Kw-ghQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4kg-bG-G9J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fCY-11-36f" secondAttribute="trailing" id="6SC-j6-xIP"/>
+                <constraint firstAttribute="bottom" secondItem="2IY-Kw-ghQ" secondAttribute="bottom" id="WQO-Ta-IZu"/>
+                <constraint firstItem="fCY-11-36f" firstAttribute="top" secondItem="iGb-tz-aHQ" secondAttribute="bottom" constant="10" id="cWq-oB-7cb"/>
+                <constraint firstItem="2IY-Kw-ghQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eZI-ny-vqa"/>
+                <constraint firstItem="iGb-tz-aHQ" firstAttribute="centerX" secondItem="2IY-Kw-ghQ" secondAttribute="centerX" id="g4v-LU-RVX"/>
+                <constraint firstAttribute="trailing" secondItem="iGb-tz-aHQ" secondAttribute="trailing" constant="20" id="giz-ZC-nv5"/>
+                <constraint firstItem="fCY-11-36f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lxJ-cY-kzD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fCY-11-36f" secondAttribute="bottom" id="q4a-2x-SuP"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ip X Copy 13" width="414" height="896"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

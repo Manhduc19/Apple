@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="234" id="Bkk-RQ-0BY" customClass="MoreResultsTableViewCell" customModule="baseapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="590" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bkk-RQ-0BY" id="VOd-bs-JqU">
+                <rect key="frame" x="0.0" y="0.0" width="590" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-wX-p3d">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UBX-SU-m9O">
+                                <rect key="frame" x="20" y="9.5" width="194" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UBX-SU-m9O" secondAttribute="height" multiplier="1:1" id="L2z-aC-56d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgL-hf-PwF">
+                                <rect key="frame" x="20" y="211.5" width="194" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UBX-SU-m9O" secondAttribute="trailing" constant="20" id="16r-8l-0rl"/>
+                            <constraint firstItem="UBX-SU-m9O" firstAttribute="centerY" secondItem="PYJ-wX-p3d" secondAttribute="centerY" multiplier="0.9" constant="1" id="2Qg-xe-Lvb"/>
+                            <constraint firstItem="MgL-hf-PwF" firstAttribute="centerX" secondItem="PYJ-wX-p3d" secondAttribute="centerX" id="58H-3P-34j"/>
+                            <constraint firstItem="UBX-SU-m9O" firstAttribute="leading" secondItem="PYJ-wX-p3d" secondAttribute="leading" constant="20" id="Aud-mR-mfh"/>
+                            <constraint firstAttribute="bottom" secondItem="MgL-hf-PwF" secondAttribute="bottom" constant="5" id="D4a-fm-jkm"/>
+                            <constraint firstAttribute="width" secondItem="PYJ-wX-p3d" secondAttribute="height" multiplier="1:1" id="ErJ-eG-JjI"/>
+                            <constraint firstItem="MgL-hf-PwF" firstAttribute="leading" secondItem="PYJ-wX-p3d" secondAttribute="leading" constant="20" id="ehI-xe-UDa"/>
+                            <constraint firstItem="MgL-hf-PwF" firstAttribute="top" secondItem="UBX-SU-m9O" secondAttribute="bottom" constant="8" id="h3G-2a-KaE"/>
+                            <constraint firstAttribute="trailing" secondItem="MgL-hf-PwF" secondAttribute="trailing" constant="20" id="nqa-ue-xUP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cf1-0M-tGO">
+                        <rect key="frame" x="234" y="0.0" width="356" height="234"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lw-lb-Qrv" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="0.0" y="20" width="356" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9E-HJ-Pft" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                        <rect key="frame" x="10" y="17.5" width="336" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="K9E-HJ-Pft" secondAttribute="trailing" constant="10" id="5hw-Gf-lm5"/>
+                                    <constraint firstItem="K9E-HJ-Pft" firstAttribute="leading" secondItem="2Lw-lb-Qrv" secondAttribute="leading" constant="10" id="QGt-73-wMh"/>
+                                    <constraint firstItem="K9E-HJ-Pft" firstAttribute="centerY" secondItem="2Lw-lb-Qrv" secondAttribute="centerY" id="d37-2e-6aV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-PJ-r2I">
+                                <rect key="frame" x="0.0" y="55" width="356" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNS-0x-PW3">
+                                        <rect key="frame" x="10" y="5" width="336" height="154"/>
+                                        <string key="text">Zantedeschia /ˌzæntɪˈdɛskiə/[4] is a genus of eight species of herbaceous, perennial, flowering plants in the family Araceae, native to southern Africa from South Africa north to Malawi. The genus has been introduced on all continents except Antarctica. Common names include arum lily for Z. aethiopica and calla and calla lily for Z. elliottiana and Z. rehmannii, although members of the genus are neither true lilies of Liliaceae, true Arums, nor true Callas (related genera in Araceae). The colourful flowers and leaves of both species and cultivars are greatly valued and commonly grown as ornamental plants.</string>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vNS-0x-PW3" firstAttribute="top" secondItem="rmw-PJ-r2I" secondAttribute="top" constant="5" id="95C-wc-rzD"/>
+                                    <constraint firstAttribute="trailing" secondItem="vNS-0x-PW3" secondAttribute="trailing" constant="10" id="bVQ-Yp-8PZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="vNS-0x-PW3" secondAttribute="bottom" constant="20" id="d8H-Zd-GPq"/>
+                                    <constraint firstItem="vNS-0x-PW3" firstAttribute="leading" secondItem="rmw-PJ-r2I" secondAttribute="leading" constant="10" id="hyf-Yt-QM6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rmw-PJ-r2I" secondAttribute="trailing" id="2Pe-nZ-zAl"/>
+                            <constraint firstItem="2Lw-lb-Qrv" firstAttribute="leading" secondItem="cf1-0M-tGO" secondAttribute="leading" id="ByN-cW-t5l"/>
+                            <constraint firstItem="rmw-PJ-r2I" firstAttribute="leading" secondItem="cf1-0M-tGO" secondAttribute="leading" id="Seg-CU-mmp"/>
+                            <constraint firstItem="2Lw-lb-Qrv" firstAttribute="top" secondItem="cf1-0M-tGO" secondAttribute="top" constant="20" id="Zun-Pi-MyW"/>
+                            <constraint firstAttribute="bottom" secondItem="rmw-PJ-r2I" secondAttribute="bottom" id="aZX-GB-WqW"/>
+                            <constraint firstItem="rmw-PJ-r2I" firstAttribute="top" secondItem="2Lw-lb-Qrv" secondAttribute="bottom" id="eia-2B-HDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="2Lw-lb-Qrv" secondAttribute="trailing" id="iw8-ve-Y5G"/>
+                            <constraint firstItem="2Lw-lb-Qrv" firstAttribute="height" secondItem="cf1-0M-tGO" secondAttribute="height" multiplier="0.15" id="sI7-ne-kCc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PYJ-wX-p3d" firstAttribute="leading" secondItem="VOd-bs-JqU" secondAttribute="leading" id="6Lm-wj-hxg"/>
+                    <constraint firstAttribute="bottom" secondItem="cf1-0M-tGO" secondAttribute="bottom" id="Cfs-5G-yOh"/>
+                    <constraint firstItem="cf1-0M-tGO" firstAttribute="top" secondItem="VOd-bs-JqU" secondAttribute="top" id="EoT-yY-ORW"/>
+                    <constraint firstAttribute="trailing" secondItem="cf1-0M-tGO" secondAttribute="trailing" id="Xm4-lk-lPL"/>
+                    <constraint firstItem="PYJ-wX-p3d" firstAttribute="top" secondItem="VOd-bs-JqU" secondAttribute="top" id="ayo-wX-NK7"/>
+                    <constraint firstAttribute="bottom" secondItem="PYJ-wX-p3d" secondAttribute="bottom" id="oTP-yK-q5H"/>
+                    <constraint firstItem="cf1-0M-tGO" firstAttribute="leading" secondItem="PYJ-wX-p3d" secondAttribute="trailing" id="wax-Wo-58X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="nqa-cw-lEf"/>
+            <connections>
+                <outlet property="accuracyLabel" destination="MgL-hf-PwF" id="ymQ-QX-Ch4"/>
+                <outlet property="descriptionLabel" destination="vNS-0x-PW3" id="ksq-73-gLa"/>
+                <outlet property="moreResultsImage" destination="UBX-SU-m9O" id="IwB-3T-skw"/>
+                <outlet property="nameLabel" destination="2Lw-lb-Qrv" id="G2a-Xt-FfZ"/>
+            </connections>
+            <point key="canvasLocation" x="337.68115942028987" y="183.48214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

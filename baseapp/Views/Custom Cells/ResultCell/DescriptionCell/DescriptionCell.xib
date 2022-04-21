@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="224" id="KGk-i7-Jjw" customClass="DescriptionCell" customModule="baseapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lc-iP-QwF">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZg-Hy-CFd">
+                                <rect key="frame" x="0.0" y="12" width="87.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="5hp-iP-eVr"/>
+                            <constraint firstItem="pZg-Hy-CFd" firstAttribute="leading" secondItem="5lc-iP-QwF" secondAttribute="leading" id="fmT-Nr-h2n"/>
+                            <constraint firstItem="pZg-Hy-CFd" firstAttribute="centerY" secondItem="5lc-iP-QwF" secondAttribute="centerY" id="z1O-Gz-T4F"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="is2-Of-7ng">
+                        <rect key="frame" x="0.0" y="45" width="376" height="179"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-hr-ejf">
+                                <rect key="frame" x="0.0" y="10" width="376" height="159"/>
+                                <string key="text">Zantedeschia /ˌzæntɪˈdɛskiə/[4] is a genus of eight species of herbaceous, perennial, flowering plants in the family Araceae, native to southern Africa from South Africa north to Malawi. The genus has been introduced on all continents except Antarctica. Common names include arum lily for Z. aethiopica and calla and calla lily for Z. elliottiana and Z. rehmannii, although members of the genus are neither true lilies of Liliaceae, true Arums, nor true Callas (related genera in Araceae). The colourful flowers and leaves of both species and cultivars are greatly valued and commonly grown as ornamental plants.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iCN-hr-ejf" secondAttribute="trailing" id="71B-m2-DZt"/>
+                            <constraint firstItem="iCN-hr-ejf" firstAttribute="leading" secondItem="is2-Of-7ng" secondAttribute="leading" id="Mv0-ca-sLS"/>
+                            <constraint firstAttribute="bottom" secondItem="iCN-hr-ejf" secondAttribute="bottom" constant="10" id="Rfk-Nq-L1w"/>
+                            <constraint firstItem="iCN-hr-ejf" firstAttribute="top" secondItem="is2-Of-7ng" secondAttribute="top" constant="10" id="elY-Ua-ibs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5lc-iP-QwF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BpP-YJ-uL6"/>
+                    <constraint firstAttribute="trailing" secondItem="is2-Of-7ng" secondAttribute="trailing" id="J5S-cQ-qDV"/>
+                    <constraint firstItem="5lc-iP-QwF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R0v-8v-oN5"/>
+                    <constraint firstAttribute="trailing" secondItem="5lc-iP-QwF" secondAttribute="trailing" id="U78-FH-Iz9"/>
+                    <constraint firstItem="is2-Of-7ng" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oC9-Ou-URW"/>
+                    <constraint firstItem="is2-Of-7ng" firstAttribute="top" secondItem="5lc-iP-QwF" secondAttribute="bottom" id="tqK-nH-NQE"/>
+                    <constraint firstAttribute="bottom" secondItem="is2-Of-7ng" secondAttribute="bottom" id="x2y-hy-Eum"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="iCN-hr-ejf" id="PCL-Ak-f2a"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="168.08035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

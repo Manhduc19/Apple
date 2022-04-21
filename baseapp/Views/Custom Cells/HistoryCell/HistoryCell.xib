@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="234" id="KGk-i7-Jjw" customClass="HistoryCell" customModule="baseapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="590" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="590" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-Bt-efK">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-5b-MQO">
+                                <rect key="frame" x="20" y="20" width="194" height="194"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OtN-5b-MQO" secondAttribute="trailing" constant="20" id="4PB-nM-asE"/>
+                            <constraint firstAttribute="width" secondItem="T0u-Bt-efK" secondAttribute="height" multiplier="1:1" id="6KW-as-JLV"/>
+                            <constraint firstItem="OtN-5b-MQO" firstAttribute="top" secondItem="T0u-Bt-efK" secondAttribute="top" constant="20" id="JIw-q8-JwS"/>
+                            <constraint firstAttribute="bottom" secondItem="OtN-5b-MQO" secondAttribute="bottom" constant="20" id="je7-J3-Vdi"/>
+                            <constraint firstItem="OtN-5b-MQO" firstAttribute="leading" secondItem="T0u-Bt-efK" secondAttribute="leading" constant="20" id="m75-7C-6i6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDz-a8-5bh">
+                        <rect key="frame" x="234" y="0.0" width="356" height="234"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-ec-P6y">
+                                <rect key="frame" x="0.0" y="20" width="356" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-oA-vpx" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                        <rect key="frame" x="10" y="7" width="336" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xaI-oA-vpx" firstAttribute="centerY" secondItem="Mbr-ec-P6y" secondAttribute="centerY" id="2Pd-Y8-sba"/>
+                                    <constraint firstItem="xaI-oA-vpx" firstAttribute="leading" secondItem="Mbr-ec-P6y" secondAttribute="leading" constant="10" id="I2k-Du-Qvn"/>
+                                    <constraint firstAttribute="trailing" secondItem="xaI-oA-vpx" secondAttribute="trailing" constant="10" id="jRl-f6-Dw3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXd-aC-hdI">
+                                <rect key="frame" x="0.0" y="55" width="356" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJu-jC-gee">
+                                        <rect key="frame" x="10" y="5" width="336" height="154"/>
+                                        <string key="text">Zantedeschia /ˌzæntɪˈdɛskiə/[4] is a genus of eight species of herbaceous, perennial, flowering plants in the family Araceae, native to southern Africa from South Africa north to Malawi. The genus has been introduced on all continents except Antarctica. Common names include arum lily for Z. aethiopica and calla and calla lily for Z. elliottiana and Z. rehmannii, although members of the genus are neither true lilies of Liliaceae, true Arums, nor true Callas (related genera in Araceae). The colourful flowers and leaves of both species and cultivars are greatly valued and commonly grown as ornamental plants.</string>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cJu-jC-gee" firstAttribute="leading" secondItem="gXd-aC-hdI" secondAttribute="leading" constant="10" id="0He-SH-xc0"/>
+                                    <constraint firstItem="cJu-jC-gee" firstAttribute="top" secondItem="gXd-aC-hdI" secondAttribute="top" constant="5" id="I8F-6v-6h4"/>
+                                    <constraint firstAttribute="bottom" secondItem="cJu-jC-gee" secondAttribute="bottom" constant="20" id="Obk-jR-rxo"/>
+                                    <constraint firstAttribute="trailing" secondItem="cJu-jC-gee" secondAttribute="trailing" constant="10" id="zbI-Wu-La5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mbr-ec-P6y" firstAttribute="top" secondItem="aDz-a8-5bh" secondAttribute="top" constant="20" id="7fn-ZD-var"/>
+                            <constraint firstAttribute="trailing" secondItem="Mbr-ec-P6y" secondAttribute="trailing" id="FmU-dL-bac"/>
+                            <constraint firstItem="Mbr-ec-P6y" firstAttribute="leading" secondItem="aDz-a8-5bh" secondAttribute="leading" id="K1f-r4-wWb"/>
+                            <constraint firstItem="gXd-aC-hdI" firstAttribute="top" secondItem="Mbr-ec-P6y" secondAttribute="bottom" id="LAE-dg-VYL"/>
+                            <constraint firstItem="Mbr-ec-P6y" firstAttribute="height" secondItem="aDz-a8-5bh" secondAttribute="height" multiplier="0.15" id="Wvr-55-CNO"/>
+                            <constraint firstItem="gXd-aC-hdI" firstAttribute="leading" secondItem="aDz-a8-5bh" secondAttribute="leading" id="bSk-SL-ZZc"/>
+                            <constraint firstAttribute="trailing" secondItem="gXd-aC-hdI" secondAttribute="trailing" id="c1j-1Y-JFX"/>
+                            <constraint firstAttribute="bottom" secondItem="gXd-aC-hdI" secondAttribute="bottom" id="p1K-ZT-4nP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aDz-a8-5bh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="13a-KS-haY"/>
+                    <constraint firstAttribute="bottom" secondItem="aDz-a8-5bh" secondAttribute="bottom" id="6TW-qD-b5i"/>
+                    <constraint firstItem="T0u-Bt-efK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D9b-C9-uy4"/>
+                    <constraint firstItem="T0u-Bt-efK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EnX-ar-h1I"/>
+                    <constraint firstAttribute="trailing" secondItem="aDz-a8-5bh" secondAttribute="trailing" id="FBL-yL-GfX"/>
+                    <constraint firstAttribute="bottom" secondItem="T0u-Bt-efK" secondAttribute="bottom" id="Xqt-Ee-aQ3"/>
+                    <constraint firstItem="aDz-a8-5bh" firstAttribute="leading" secondItem="T0u-Bt-efK" secondAttribute="trailing" id="bJt-Ot-13D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="cJu-jC-gee" id="mge-kS-QiV"/>
+                <outlet property="historyImage" destination="OtN-5b-MQO" id="Kqd-QT-33x"/>
+                <outlet property="nameLabel" destination="xaI-oA-vpx" id="kMs-5J-dnn"/>
+            </connections>
+            <point key="canvasLocation" x="337.68115942028987" y="183.48214285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="xaI-oA-vpx">
+            <size key="intrinsicContentSize" width="46" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
